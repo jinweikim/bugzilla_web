@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向软件缺陷的模板自动生成系统</title>
+    <style type="text/css">
+        .text-search{
+            width: 500px;
+            height: 30px;
+            border:1px solid #96c2f1;
+            background:#eff7ff;
+            border-radius: 6px;
+            -webkit-box-shadow: 10px 10px 5px #888888;
+            -moz-box-shadow: 10px 10px 5px #888888;
+            box-shadow: 10px 10px 5px #888888;
+        }
+        .text-show{
+            width: 500px;
+            height: 80px;
+            border:1px solid #ffcc00;
+            background:#fffff7;
+            border-radius: 6px;
+            -webkit-box-shadow: 10px 10px 5px #888888;
+            -moz-box-shadow: 10px 10px 5px #888888;
+            box-shadow: 10px 10px 5px #888888;
+        }
+        .text-show1{
+            width: 500px;
+            height: 360px;
+            border:1px solid #ffcc00;
+            background:#fffff7;
+            border-radius: 6px;
+            -webkit-box-shadow: 10px 10px 5px #888888;
+            -moz-box-shadow: 10px 10px 5px #888888;
+            box-shadow: 10px 10px 5px #888888;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="display: flex;justify-content: center">
+    <div>
+    <div style="text-align: center">
+
+    </div>
+    <div style="text-align: center">
+        <p>面向软件缺陷的模板自动生成系统</p>
+    </div>
+    <div style="text-align: center">
+        <form method='post'>
+            {% csrf_token %}
+            <p>
+                <input class="text-search" type="text" name="sentence">
+            </p>
+            <p>
+                <input style="height: 30px" type="submit" value="生成模板">
+            </p>
+        </form>
+    </div>
+    <p style="margin-left: 50px">原句</p>
+    <div style="text-align: center">
+        <p>
+            <textarea class="text-show">{{ form.sentence.value }}</textarea>
+        </p>
+    </div>
+    <p style="margin-left: 50px">问句模板</p>
+    <div style="text-align: center">
+        <p>
+            <textarea class="text-show">{{ template0.0 }}
+
+{{ template1.0 }}
+            </textarea>
+            </p>
+    </div>
+    <p style="margin-left: 50px">SPARQL模板</p>
+    <div style="text-align: center">
+        <p>
+            <textarea class="text-show">{{ template0.1 }}
+
+{{ template1.1 }}</textarea>
+         </p>
+    </div>
+    </div>
+    <div style="margin-left: 100px;margin-top: 10px">
+        <p style="margin-left: 50px">语料库示例</p>
+        <div style="text-align: center">
+            {% for i in yuliao %}
+             <p>{{ i.strip }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</body>
+</html>

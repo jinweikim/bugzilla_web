@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="http://www.bugzilla.com/"
+>
+  <rdf:Description rdf:about="Bug 148007">
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isDescription><![CDATA[<label value="Click here:" control="open-button"/>
+
+<description>
+  Testing Description tag for Accessibility. 
+</description>  
+
+Add the above text to the xul file and open in mozilla or embedding application.
+open Inspect and click on "show highlight rectangle". Move the cursor on to the
+label text or description text. watch the State attribute in Inspect tool. You
+see "readonly, focusable, selectable". It should show only "readonly", since
+text is not focusable and selectable.]]></ns1:isDescription>
+    <ns1:isTriageOwner>James Teh [:Jamie]</ns1:isTriageOwner>
+    <ns1:isComponent>Disability Access APIs</ns1:isComponent>
+    <ns1:isBugname>ns</ns1:isBugname>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 109851">
+    <ns1:isDescription>I've been noticing double events for some time -- but they don't occur in MFCEmbed.
+
+It comes down to the fact that HTML events are bubbling up to the chrome's
+nsRootAccessible as well. We've been creating an nsRootAccessible that listens
+for events for both the HTML document and the XUL document.
+
+I believe we really only want to create the nsRootAccessible's for the true root.</ns1:isDescription>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ModifiedTime>15 years ago</ns1:ModifiedTime>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isBugname>Active Accessibility: extra accessible events being generated</ns1:isBugname>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Bookmarks &amp; History</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 166340">
+    <ns1:isBugname>type ahead find on full text won't find some characters</ns1:isBugname>
+    <ns1:isReporter>Tuukka Tolvanen (sp3000)</ns1:isReporter>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isDescription>User-Agent:       Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1b) Gecko/20020902
+Build Identifier: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1b) Gecko/20020902
+
+For me typeaheadfind won't find any of (at least) abgiloruz1 as the first
+character, in full search mode.
+
+see</ns1:isDescription>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1306942">
+    <ns1:isComponent>Inspector</ns1:isComponent>
+    <ns1:ModifiedTime>10 months ago</ns1:ModifiedTime>
+    <ns1:isDescription>User Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0
+Build ID: 20161001030430
+
+Steps to reproduce:
+
+1. Start Nightly in RTL locales
+2. Open DevTools &gt; Inspector
+3. Resize inspector sidebar until displaying all-tabs-menu
+
+
+Actual results:
+
+all-tabs-menu position is the start side.
+
+Regression range:</ns1:isDescription>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:isProduct>DevTools</ns1:isProduct>
+    <ns1:isReporter>magicp</ns1:isReporter>
+    <ns1:isTriageOwner>Gabriel [:gl] (ΦωΦ)</ns1:isTriageOwner>
+    <ns1:isBugname>Fix all-tabs-menu position in RTL locales</ns1:isBugname>
+    <ns1:ReportedTime>3 years ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 121114">
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:isComponent>User events and focus handling</ns1:isComponent>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+    <ns1:isBugname>No keyboard access to links in Element Properties window</ns1:isBugname>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isDescription>I cannot use the keyboard to focus on links in the element properties window.
+
+This window is where accessibility information is often exposed - for example,
+the links provided in the longdesc attribute on images and frames. So, we're
+exposing the accessibility information visually, but now allowing the keyboard
+users access to it.
+
+I'll take a look and see if I can fix it first.</ns1:isDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 164295">
+    <ns1:isBugname>[typeaheadfind] Linker Error with  Sun Forte Compile against gkgfx</ns1:isBugname>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:isDescription>This is the same problem that occured in</ns1:isDescription>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 710407">
+    <ns1:isBugname>Define and document Android Sync behavior if multiple Firefox versions (e</ns1:isBugname>
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isReporter>Allison Naaktgeboren :ally</ns1:isReporter>
+    <ns1:isComponent>Android Sync</ns1:isComponent>
+    <ns1:isTriageOwner>:Grisha Kruglov</ns1:isTriageOwner>
+    <ns1:isDescription>Sync's behavior on android is undefined if more than one version of firefox is installed. What, if any, should the behavior be, and is the desired behavior even technically feasible?</ns1:isDescription>
+    <ns1:isProduct>Firefox for Android</ns1:isProduct>
+    <ns1:ReportedTime>7 years ago</ns1:ReportedTime>
+    <ns1:isAssignee>Allison Naaktgeboren :ally</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1471243">
+    <ns1:isReporter>Ciprian Muresan [:cmuresan], Experiments QA</ns1:isReporter>
+    <ns1:ReportedTime>10 months ago</ns1:ReportedTime>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isBugname>The New Tab Page is briefly displayed before the about:welcome page when a new Beta profile is opened</ns1:isBugname>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:ModifiedTime>8 months ago</ns1:ModifiedTime>
+    <ns1:isDescription>[Affected versions]:
+- Firefox Beta v62.0b3, Build ID 20180625141512
+
+[Affected Platforms]:
+- All Windows
+- All Mac
+- All Linux
+
+[Steps to reproduce]:
+1. Create a new Firefox profile.
+2. Start the browser with the new profile and observe the behavior.
+
+[Expected results]:
+- The "about:welcome" page is displayed as soon as the browser starts.
+
+[Actual results]:
+- The "about:newtab" page is briefly displayed before the "about:welcome" one.
+
+[Notes]:
+- The issue is not reproducible on slower machines.
+- This issue is not reproducible on Nightly because the about:welcome page is not set as the first run page.
+- Attached a screen recording of the issue:</ns1:isDescription>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 165665">
+    <ns1:isDescription>Hmm ... dumb mistake. My last performance enhancement for typeaheadfind
+regressed it so that it would shut off when a new page was loaded in the same
+window. Duh.
+
+Well, the coming patch fixes that, and implements bz's suggestions for improving
+typing performance.</ns1:isDescription>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isBugname>Typeaheadfind not active after set new doc</ns1:isBugname>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 131089">
+    <ns1:isDescription>A topcrash with the stack below started appearing in 2002-03-10-11 builds.  I
+assume it was caused by the checkin:
+
+date: 2002/03/10 06:21:38;  author: aaronl%netscape.com;  state: Exp;  lines:
++471 -215
+Fixes</ns1:isDescription>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+    <ns1:isTriageOwner>Neil Deakin</ns1:isTriageOwner>
+    <ns1:isBugname>crashes [@ ns</ns1:isBugname>
+    <ns1:isComponent>XUL</ns1:isComponent>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isReporter>David Baron :dbaron: 🏴󠁵󠁳󠁣󠁡󠁿 ⌚UTC-7</ns1:isReporter>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1476594">
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:isReporter>Andrei Oprea [:andreio]</ns1:isReporter>
+    <ns1:isBugname>Homepage pref list options don't update when selected</ns1:isBugname>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:isDescription>In about:preferences#home make sure you have the first option selected for the Homepage pref.
+Switch to Blank page (#3rd option) and try switching back to first. Notice how switching to the first option requires you to select it a second time around for it to update.</ns1:isDescription>
+    <ns1:ModifiedTime>6 months ago</ns1:ModifiedTime>
+    <ns1:ReportedTime>9 months ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 131918">
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:isBugname>Infinite loop in ns</ns1:isBugname>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+    <ns1:isReporter>John Morrison</ns1:isReporter>
+    <ns1:isDescription><![CDATA[Infinite loop in nsEventStateManager::MoveFocusToCaret, tabbing to form controls
+
+Somehow, I've hit an infinite loop while doing some testing of form controls.
+
+(NOTE: this happens with either the current (c++) implementation of form controls
+or with the xbl-based form controls. It is independent of [XBLFC].)
+
+Steps to reproduce:
+1) start browser and load the first attachment to this bug (simple form)
+2) tab out of urlbar to first link, and tab again to first <select>
+3) use the mouse to set the focus back in the urlbar
+4) again, tab out of urlbar to first link, and tab again to first <select>
+5) at this point, wait. In a few seconds, CPU will go to 100%
+
+The stack trace for the loop is below, and it is stuck in the 'do {} while ();'
+of MoveFocusToCaret, which starts at about line 4332 of nsEventStateManager.cpp
+
+Tested with win2k, cvs build pulled ~4pm 03/18
+
+-> aaronl, since cvsblame has him as the author of that loop.
+
+nsEventStateManager::MoveFocusToCaret(nsEventStateManager * const 0x0158d9ce,
+int 0x00000000, int * 0x00000000) line 4332
+nsEventStateManager::ShiftFocusInternal(nsEventStateManager * const 0x00000013,
+int 0x0158d810, nsIContent * 0x00000001) line 2776
+nsEventStateManager::ShiftFocus(nsEventStateManager * const 0x025498c8, int
+0x00000001, nsIContent * 0x00000000) line 2706
+nsEventStateManager::PostHandleEvent(nsEventStateManager * const 0x01cdc2ae,
+nsIPresContext * 0x025498c8, nsEvent * 0x02534a58, nsIFrame * 0x0012fb44,
+nsEventStatus * 0x0259f5ec, nsIView * 0x0012fa14) line 1830
+PresShell::HandleEventInternal(PresShell * const 0x00000013, nsEvent *
+0x01cdc04c, nsIView * 0x025498c8, unsigned int 0x025a04d8, nsEventStatus *
+0x00000001) line 6074 + 25 bytes
+PresShell::HandleEvent(PresShell * const 0x01e392a3, nsIView * 0x025498c8,
+nsGUIEvent * 0x025a04d8, nsEventStatus * 0x0012fb44, int 0x0012fa14, int &) line
+5977 + 24 bytes
+nsViewManager::HandleEvent(nsViewManager * const 0x00000013, nsView *
+0x01e313c4, nsGUIEvent * 0x02567cc8, int 0x0012fb44) line 2043
+nsView::HandleEvent(nsView * const 0x00000013, nsViewManager * 0x01c4d6f8,
+nsGUIEvent * 0x0012fb44, int 0x00000000) line 306
+nsViewManager::DispatchEvent(nsViewManager * const 0x01e31f2d, nsGUIEvent *
+0x01c4d6f8, nsEventStatus * 0x3d888889) line 1857 + 29 bytes
+HandleEvent(nsGUIEvent * 0x0012fb44) line 83
+nsWindow::DispatchEvent(nsWindow * const 0x02567d3c, nsGUIEvent * 0x0012fb44,
+nsEventStatus & nsEventStatus_eIgnore) line 865 + 3 bytes
+nsWindow::DispatchWindowEvent(nsWindow * const 0x00000013, nsGUIEvent *
+0x00000000) line 886
+nsWindow::DispatchKeyEvent(nsWindow * const 0x00000013, unsigned int 0x00000083,
+unsigned short 0x0000, unsigned int 0x00000009, long 0x00000000) line 2659 + 32
+bytes
+nsWindow::OnChar(nsWindow * const 0x00000013, unsigned int 0x00000009, unsigned
+int 0x00000009, unsigned char 0x00) line 2807 + 20 bytes
+nsWindow::ProcessMessage(nsWindow * const 0x00000013, unsigned int 0x018a2575,
+unsigned int 0x00000102, long 0x00000009, long * 0x000f0001) line 4167 + 16 bytes
+nsWindow::WindowProc(HWND__ * 0x77e13eb0, unsigned int 0x00db03c2, unsigned int
+0x00000000, long 0x00000009) line 1130 + 15 bytes
+USER32! 77e13eb0()
+nsAppShellService::Run(nsAppShellService * const 0x00f50110) line 309
+main1(int 0x004020de, char * * 0x00000001, nsISupports * 0x00312c30) line 1350 +
+10 bytes
+main(int 0x00000000, char * * 0x00313bb8) line 1698 + 23 bytes
+WinMain(HINSTANCE__ * 0x00400000, HINSTANCE__ * 0x00400000, char * 0x001333fb,
+HINSTANCE__ * 0x00400000) line 1716 + 23 bytes
+MOZILLA! WinMainCRTStartup + 308 bytes]]></ns1:isDescription>
+    <ns1:isComponent>User events and focus handling</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 118858">
+    <ns1:isComponent>General</ns1:isComponent>
+    <ns1:isBugname>Active Accessibility: ns</ns1:isBugname>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:ModifiedTime>15 years ago</ns1:ModifiedTime>
+    <ns1:isDescription><![CDATA[here is the simple test case.
+-----------
+<html>
+<title> nsIAccessible Interface Test Case </title>
+<body>
+<b> Simple text which is not focusable </b>
+
+<br><br>
+<button value="submit"> Submit </button>
+
+</body>
+</html>
+---------------------------
+Open the above test case in Mozilla or mfcEmbed. Run mozInspect, click on "show 
+highlight rectangle" and move the cursor over to the text "Simple text which is 
+not focusable".Watch the value of state.It shows
+"read only,focusable,selectable". It should not show focusable since text is 
+not focusable. IE shows "read only,selectable".]]></ns1:isDescription>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 165632">
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isDescription>I have all the MozillaBuildList.pl changes, I think.
+I still need to generate the .xml build files.
+
+Unfortunately, I'm having a lot of bad luck getting Mozilla to build on my Mac
+at all. Tried pulling a fresh tree, getting CodeWarrior 7.2, but still no luck.
+So I can't move forward on this at the moment.</ns1:isDescription>
+    <ns1:isBugname>Get typeaheadfind building on mac</ns1:isBugname>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 132154">
+    <ns1:isTriageOwner>Neil Deakin</ns1:isTriageOwner>
+    <ns1:isReporter>John Gaunt (redfive)</ns1:isReporter>
+    <ns1:isComponent>XUL</ns1:isComponent>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isDescription>There used ( 6.2.1 ) to be a subtly dotted ring around an area of an image map
+when you tabbed through the areas. I don't see this anymore. In a simplified
+test I see during tabbing:  URLbar -&gt; document -&gt; Entire image map -&gt; URLbar etc...
+
+I'll attach the simple testcase i developed.</ns1:isDescription>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isBugname>No focus ring on individual areas of Image maps</ns1:isBugname>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 152370">
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+    <ns1:isTriageOwner>James Teh [:Jamie]</ns1:isTriageOwner>
+    <ns1:isComponent>Disability Access APIs</ns1:isComponent>
+    <ns1:isBugname>menulist and listbox not reporting correct accessible value</ns1:isBugname>
+    <ns1:isDescription>-- Testcase attached.
+Summary describes the bug.</ns1:isDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 125295">
+    <ns1:ModifiedTime>15 years ago</ns1:ModifiedTime>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isDescription><![CDATA[Below it the test case:
+-----------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+
+function getAccessibleNode(startNode)
+{
+  var accessibleService = null;
+  var accessibleNode = null;
+  try{
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+   accessibleService = Components.classes
+["@mozilla.org/accessibilityService;1"].createInstance();
+   accessibleService = accessibleService.QueryInterface
+(Components.interfaces.nsIAccessibilityService);
+  }
+  catch(e){
+   alert("Error getting accessibility service");
+  }
+
+  try{
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+   accessibleNode = accessibleService.getAccessibleFor(startNode);
+
+   return accessibleNode;
+  }
+  catch(e){
+   return "Exception";
+  }
+}
+
+function getValue()
+{
+  try{
+   return accNode.accValue;
+  }
+  catch(e){
+    return(e);
+  }
+}
+
+function executeTestCase()
+{
+ try{
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+  var node = document.getElementsByTagName("button").item(0);
+  node = node.firstChild;
+  accNode = getAccessibleNode(node);
+  var value = getValue();
+  var newvalue = value.toString();
+alert("Value: " + newvalue);
+
+ }
+ catch(e){
+  alert("Exception: " + e);
+ }
+}
+
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+<!-- Test Button -->
+document.write('<br>');
+document.write('<b>Testing Button for Accessibility..</b><br><br>');
+document.write('<button value="submit">Submit</button>');
+
+setTimeout("executeTestCase();", 2000);
+
+</script>
+</body>
+</html>
+------------------------------------------------------------
+When you execute the test case in Mozilla or MfcEmbed the alert shows 
+
+Value: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAIL
+URE) [nsIAccessible.accValue]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  locat
+ion: "JS frame :: file:///C:/Netscape/Accessibility/bug.html :: getValue :: line
+ 36"  data: no]
+Actually it should show NS_ERROR_NOT_IMPLEMENTED if the functionality is not 
+implemented.]]></ns1:isDescription>
+    <ns1:isBugname><![CDATA[Active Accessibility: Html <button> Element should not have any children]]></ns1:isBugname>
+    <ns1:isComponent>General</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1361695">
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isBugname>Add illustration to about:license</ns1:isBugname>
+    <ns1:ModifiedTime>10 days ago</ns1:ModifiedTime>
+    <ns1:isComponent>General</ns1:isComponent>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isDescription>mockup:</ns1:isDescription>
+    <ns1:isReporter>Dão Gottwald [::dao]</ns1:isReporter>
+    <ns1:isTriageOwner>Justin Dolske [:Dolske]</ns1:isTriageOwner>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 166033">
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:isBugname>Keyboard menu navigation (access keys) not working due to perf 'improvement' for typeaheadfind</ns1:isBugname>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isDescription>win32 trunk build 2002083108, win98se
+
+When the keyboard is used to access menu items, the initial keyboard shortcut
+does drop down the menu, but typing the letter for a particular menu item
+initiates a "find in page" for that letter instead of initiating the menu item.
+ Happens with a new profile or an existing one.
+
+Steps to reproduce:
+1. Create a new profile and start the browser (should go to default home page</ns1:isDescription>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isReporter>K Chayka</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1472642">
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:isDescription>[Affected versions]:
+- Nightly 63.0a1 Build ID 20180701220749
+
+[Affected Platforms]:
+- All Windows
+- All Mac
+- All Linux
+
+[Steps to reproduce]:
+1. Open the Browser and navigate to the about:welcome page.
+2. Click the "Continue" button and observe the behavior.
+
+[Expected results]:
+- The "Email" field is focused.
+
+[Actual results]:
+- The "Email" field is highlighted with red and the "Valid email required" message appears in a red bubble towards the top of the page, but the field is not focused.
+
+[Notes]:
+- Attached a screen recording of the issue.</ns1:isDescription>
+    <ns1:isBugname>The empty "Email" field is not focused when the "Continue" button is clicked on about:welcome</ns1:isBugname>
+    <ns1:ModifiedTime>9 months ago</ns1:ModifiedTime>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:ReportedTime>10 months ago</ns1:ReportedTime>
+    <ns1:isReporter>Ciprian Muresan [:cmuresan], Experiments QA</ns1:isReporter>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 103903">
+    <ns1:isComponent>DOM: Core &amp; HTML</ns1:isComponent>
+    <ns1:isDescription><![CDATA[When inspecting a window object in the js debugger, nsHTMLImageAccessible.cpp
+causes a crash.
+
+Index: nsHTMLImageAccessible.cpp
+===================================================================
+RCS file: /cvsroot/mozilla/accessible/src/nsHTMLImageAccessible.cpp,v
+retrieving revision 1.11
+diff -u -r1.11 nsHTMLImageAccessible.cpp
+--- nsHTMLImageAccessible.cpp	2001/09/25 22:32:27	1.11
++++ nsHTMLImageAccessible.cpp	2001/10/09 19:37:27
+@@ -58,7 +58,8 @@
+   nsCOMPtr<nsIDOMElement> element(do_QueryInterface(aDOMNode));
+   nsCOMPtr<nsIDocument> doc;
+   nsCOMPtr<nsIPresShell> shell(do_QueryReferent(mPresShell));
+-  NS_ASSERTION(shell,"Shell is gone!!! What are we doing here?");
++  if (NS_WARN_IF_FALSE(shell,"Shell is gone!!! What are we doing here?"))
++    return;
+ 
+   shell->GetDocument(getter_AddRefs(doc));
+   nsAutoString mapElementName;
+
+Top of stack looked like this...
+(gdb) where
+#0  0x42571aa4 in nsHTMLImageAccessible::nsHTMLImageAccessible (
+    this=0x8b9ab70, aDOMNode=0x8ba8e30, aShell=0x0)
+    at nsHTMLImageAccessible.cpp:63
+#1  0x425690bf in nsAccessibilityService::CreateXULImageAccessible (
+    this=0x8db51f0, aNode=0x8ba8e30, _retval=0xbfff955c)
+    at nsAccessibilityService.cpp:351
+#2  0x401e9300 in XPTC_InvokeByIndex (that=0x8db51f0, methodIndex=15, 
+    paramCount=2, params=0xbfff954c) at xptcinvoke_unixish_x86.cpp:153]]></ns1:isDescription>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:isBugname>M095 Trunk crash in ns</ns1:isBugname>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isReporter>Robert Ginda</ns1:isReporter>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 133304">
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isComponent>Selection</ns1:isComponent>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isDescription>When I compose a new message, I type in an address, hit tab, type in a subject,
+hit tab.  I expect to see the blinking cursor now displayed in the body of the
+message, but there is no cursor to be seen anywhere.  If I start typing, the
+text I typed appears where you would expect it at the top of the composition
+window, and so does the cursor, but until I type, the cursor is lost.
+
+I have seen similar problem typing into form windows in the browser, but I can't
+replicate the behaviour as reliably as in the mail composition window.
+
+Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.9+) Gecko/20020325</ns1:isDescription>
+    <ns1:isReporter>Michael Baffoni</ns1:isReporter>
+    <ns1:isBugname>No blinking caret in mail body</ns1:isBugname>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1393507">
+    <ns1:isTriageOwner>:Gijs (he/him)</ns1:isTriageOwner>
+    <ns1:isComponent>Toolbars and Customization</ns1:isComponent>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isDescription>New "Bookmarks Toolbar Items" icon in Bookmarks Toolbar in "Customize..." mode is too dark after
+
+STR:
+1. Open "Customize..." mode
+2. Look on far left in Bookmarks Toolbar on "Bookmarks Toolbar Items" icon
+and see that it's full black, instead of grey, which makes it inconsistent with other icons in Location Bar in Bookmarks Bar
+
+Caused by:</ns1:isDescription>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isReporter>Virtual_ManPL [:Virtual] - (please needinfo? me - so I will see your comment/reply/question/etc.)</ns1:isReporter>
+    <ns1:isBugname>"Bookmarks Toolbar Items" icon in Bookmarks Toolbar in "Customize</ns1:isBugname>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:ModifiedTime>a year ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1486779">
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:ModifiedTime>5 months ago</ns1:ModifiedTime>
+    <ns1:isReporter>Adam Hillier :ahillier</ns1:isReporter>
+    <ns1:isDescription>We need to add the custom header, author label, etc.</ns1:isDescription>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:ReportedTime>8 months ago</ns1:ReportedTime>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:isBugname>Update doorhanger to reflect new designs</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 130447">
+    <ns1:isBugname>Clicking on anchor goes to top of page, entering the URL directly doesn't</ns1:isBugname>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isDescription>If you go to the above URL, which is to an anchor in the Java documentation, the
+browser brings up the page scrolled to the anchor correctly. If you click on the
+link to the same anchor on the page the browser scrolls to the top of the page,
+instead. The link to the anchor can be found in the 'Method Index' section, it
+is the last link in that section.
+This applies to all links in the Java documentation, at least.</ns1:isDescription>
+    <ns1:isTriageOwner>Kyle Machulis [:qdot] [:kmachulis]</ns1:isTriageOwner>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+    <ns1:isComponent>Document Navigation</ns1:isComponent>
+    <ns1:isReporter>A. Craig West</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 560759">
+    <ns1:isProduct>support.mozilla.org</ns1:isProduct>
+    <ns1:ReportedTime>9 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Knowledge Base Articles</ns1:isComponent>
+    <ns1:isTriageOwner>Joni Savage ("need info" me)</ns1:isTriageOwner>
+    <ns1:isDescription>Filed this as a spinoff for</ns1:isDescription>
+    <ns1:ModifiedTime>9 years ago</ns1:ModifiedTime>
+    <ns1:isAssignee>Kadir Topal [:atopal]</ns1:isAssignee>
+    <ns1:isReporter>Paul Craciunoiu [:paulc]</ns1:isReporter>
+    <ns1:isBugname>Rename/Delete duplicate KB article names in preparation for encoding conversion to UTF8</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 166704">
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isBugname>Alt+tabbing to another app &amp; back can disable typeaheadfind</ns1:isBugname>
+    <ns1:isComponent>Find In Page</ns1:isComponent>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isDescription>If you use Alt+Tab, but let go of the alt before the tab, typeaheadfind gets
+disabled.
+
+This is because typeaheadfind receives a DOMMenuBarActive event, but not a
+DOMMenuBarInactive event. It turns out that ToggleMenuActiveState() uses
+SetActive(PR_TRUE) to turn on menus, but it doesn't use SetActive(PR_FALSE) to
+turn them off. SetActive is where the DOMMenuBar* events are fired.
+
+This occurs on Windows, possibly on Linux.</ns1:isDescription>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:ModifiedTime>11 years ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 111284">
+    <ns1:isComponent>General</ns1:isComponent>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:ModifiedTime>14 years ago</ns1:ModifiedTime>
+    <ns1:isDescription><![CDATA[Below is the shortened version of test case.
+----------------------
+<html>
+<head>
+<script type="text/javascript">
+
+function getAccessibleNode(startNode)
+{
+  var accessibleService = null;
+  var accessibleNode = null;
+  try{
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+   accessibleService = 
+Components.classes["@mozilla.org/accessibilityService;1"].createInstance();
+   accessibleService = 
+accessibleService.QueryInterface(Components.interfaces.nsIAccessibilityService);
+  }
+  catch(e){
+   alert("Error getting accessibility service");
+  }
+
+  try{
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+   netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+   accessibleNode = accessibleService.getAccessibleFor(startNode);
+   return accessibleNode;
+  }
+  catch(e){
+   return "Exception";
+  }
+}
+
+function getDomNodeTable()
+{
+ try{
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+  var node = document.getElementsByTagName("table").item(0);
+  return node;
+ }
+ catch(e){
+  alert("Exception: " + e);
+ }
+}
+
+</script>
+</head>
+<body>
+
+<center>
+<table border cols=2 width="50%">
+<caption>Test Table</caption>
+ <tr>
+  <td> Row1,Col1</td>
+  <td> Row1,Col2</td>
+ </tr>
+ <tr>
+  <td> Row2,Col1</td>
+  <td> Row2,Col2</td>
+ </tr>
+ <tr>
+  <td> Row3,Col1</td>
+  <td> Row3,Col2</td>
+ </tr>
+</table>
+</center>
+
+<script type="text/javascript">
+try{
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+  var domNode = getDomNodeTable();
+  alert("domNode: " + domNode);
+  var accNode = getAccessibleNode(domNode);
+  alert("accNode: " + accNode);
+
+  var name = accNode.accName;
+  alert("Name: " + name);
+}
+catch(e){
+  alert("Exception: " + e);
+}
+</script>
+</body>
+</html>
+----------------------
+I am displaying the HTML table first, and using dom api i am getting the dom 
+node for table. after getting the dom node for table i am checking for wheather 
+that dom node is accessible or not.in this case the dom node is accessible.
+1.When i run this test case from mozilla  accNode.accName returns null.
+2.When i run this test case from mozilla and open mozInspect and check the 
+table node mozInspect shows null.that is fine but
+3.When i run this test case from IE and open mozInspect and check the table node 
+mozInspect returns "Test Table". It picks up the caption text for accName.
+I know the test case doesnot run properly from IE but i wanted to display table 
+so that i can use to test using mozInspect.]]></ns1:isDescription>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isBugname>Active Accessibility: acc</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1453953">
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isBugname>regression: Zoom level indicator is ugly in its fade-in animation (choose the right animation scale for blob images)</ns1:isBugname>
+    <ns1:isDescription>mozregression --good 2018-04-01 --bad 2018-04-10 --pref gfx.webrender.all:true startup.homepage_welcome_url:'</ns1:isDescription>
+    <ns1:isTriageOwner>Jessie [:jbonisteel] plz needinfo</ns1:isTriageOwner>
+    <ns1:isAssignee>Alexis Beingessner [:Gankro]</ns1:isAssignee>
+    <ns1:isComponent>Graphics: WebRender</ns1:isComponent>
+    <ns1:ModifiedTime>7 months ago</ns1:ModifiedTime>
+    <ns1:ReportedTime>a year ago</ns1:ReportedTime>
+    <ns1:isReporter>Jan Andre Ikenmeyer [:darkspirit]</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1449976">
+    <ns1:ModifiedTime>a year ago</ns1:ModifiedTime>
+    <ns1:isReporter>Fanolian</ns1:isReporter>
+    <ns1:isComponent>Graphics: WebRender</ns1:isComponent>
+    <ns1:isDescription>User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0
+Build ID: 20180329100042
+
+Steps to reproduce:
+
+1. Sign in to Gmail.
+2. Go to Gmail's Settings &gt; General.
+3. Enable "Show snippets - Show snippets of the message (like Google web search!)" . The option is near the bottom.
+4. Go to Inbox or All Mail, which shows a list of email and some of the email content (snippets).
+
+5. Turn on devtool's Inspector on the page.
+6. Add the following rule in the Rules panel on the right, to set text-shadows on all text:
+* { text-shadow: 1px 1px; }
+7. Observe the snippets
+
+
+Actual results:
+
+Text shadow is showing on clipped snippets, overlapping the date, and extending towards the right end of the page.
+(Please see the attached screenshot.)
+
+
+Expected results:
+
+With WebRender is off, text shadow is not shown on those clipped text.</ns1:isDescription>
+    <ns1:isBugname>[Web</ns1:isBugname>
+    <ns1:ReportedTime>a year ago</ns1:ReportedTime>
+    <ns1:isAssignee>Alexis Beingessner [:Gankro]</ns1:isAssignee>
+    <ns1:isTriageOwner>Jessie [:jbonisteel] plz needinfo</ns1:isTriageOwner>
+    <ns1:isProduct>Core</ns1:isProduct>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 120813">
+    <ns1:ModifiedTime>15 years ago</ns1:ModifiedTime>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isDescription><![CDATA[try the below test case..
+----------------------------------
+<html>
+<title> nsIAccessible Interface Test Case </title>
+<body>
+
+<b><center> HTML Elements </center></b>
+<br>
+<!-- Test Anchor -->
+<!-- Anchor linking to external file -->
+<b> Testing Link </b>
+<br>
+<a href="]]></ns1:isDescription>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isBugname>Active Accessibility: Mfc</ns1:isBugname>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isComponent>General</ns1:isComponent>
+    <ns1:isReporter>dsirnapalli</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1472819">
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:ModifiedTime>9 months ago</ns1:ModifiedTime>
+    <ns1:isDescription>STR:
+
+- Open today's Nightly (63.0a1 (2018-07-02) (64-bit) on MacOS), with a fresh profile.
+- Observe that the "Okay, got it" button that dismisses the explanatory text above the Pocket section is pushed below the line of text it dismisses (screenshot attached).
+
+Expected result (I think):
+- The button should be in line with the text, as with the "Import now" button for the migration text (below the searchbar, also visible in the screenshot).</ns1:isDescription>
+    <ns1:ReportedTime>10 months ago</ns1:ReportedTime>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isReporter>Adam Hillier :ahillier</ns1:isReporter>
+    <ns1:isBugname>Pocket section CSS issue: dismiss button for the explanation text has been pushed down the page</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1404558">
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isDescription>Regression? Just updated to this build before the quoted crash happened.
+
+(Jan Andre Ikenmeyer [:darkspirit] from</ns1:isDescription>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Jessie [:jbonisteel] plz needinfo</ns1:isTriageOwner>
+    <ns1:isAssignee>Alexis Beingessner [:Gankro]</ns1:isAssignee>
+    <ns1:isComponent>Graphics: WebRender</ns1:isComponent>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isBugname>regression: Crash in [@ mozalloc</ns1:isBugname>
+    <ns1:isReporter>Jan Andre Ikenmeyer [:darkspirit]</ns1:isReporter>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1480508">
+    <ns1:isReporter>Kate Hudson :k88hudson</ns1:isReporter>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:ModifiedTime>8 months ago</ns1:ModifiedTime>
+    <ns1:isDescription>We would like to automatically add a Top Site Search Shortcut to users' for existing users if they have an open (i.e. unpinned) tile available and the host name (google, amazon) is found in their top sites.
+
+Note that we should store some kind of state in persistent storage when we do this so that we do not add a second time if it is removed/edited/replaced.</ns1:isDescription>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:ReportedTime>9 months ago</ns1:ReportedTime>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isBugname>Add Top Site Search Shortcuts automatically for new and existing users</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 102679">
+    <ns1:isBugname>Composer loses focus after deleting a linked image</ns1:isBugname>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:isComponent>User events and focus handling</ns1:isComponent>
+    <ns1:isDescription>Build ID: 20011001
+
+Composer looses focus after deleting a linked image.
+
+Reproducible: Always
+
+Steps to Reproduce:
+1.Open Composer
+2.Insert an image using the image button on the toolbar
+3.Highlight the image and click the link button on the toolbar then create a
+link and click ok
+4.Click the image and delete it
+5.Type some text
+
+Actual Results:
+The text does not type because the composer window has lost focus.  In order to
+type again you need to click in the window.
+
+Expected Results:
+I would expect that composer would maintain it's focus after deleting a linked
+image.</ns1:isDescription>
+    <ns1:isReporter>TucsonTester2</ns1:isReporter>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1403851">
+    <ns1:isReporter>Johann Hofmann [:johannh]</ns1:isReporter>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Theme</ns1:isComponent>
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:isTriageOwner>Dão Gottwald [::dao]</ns1:isTriageOwner>
+    <ns1:isBugname>Bookmark toolbar icons are too bright in dark theme</ns1:isBugname>
+    <ns1:isDescription>They should have the same color as other toolbar icons, see</ns1:isDescription>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1403875">
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Theme</ns1:isComponent>
+    <ns1:isReporter>[:Towkir] Ahmed</ns1:isReporter>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:isTriageOwner>Dão Gottwald [::dao]</ns1:isTriageOwner>
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isDescription>The bookmarks toolbar dropzone icon accidentally lost it's svg properties like fill, fill-opacity.
+Hence it looks black on dark theme.
+
+
+A follow up from</ns1:isDescription>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isBugname>Bookmarks toolbar dropzone icon doesn't have the right color with the Dark theme</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 135196">
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+    <ns1:isReporter>Jesse Ruderman</ns1:isReporter>
+    <ns1:isComponent>User events and focus handling</ns1:isComponent>
+    <ns1:isDescription><![CDATA[When I press F7 in 2002 040303, nothing happens in the browser window, and the
+following appears on the JS console:
+
+Error: uncaught exception: [Exception... "Component returned failure code:
+0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult:
+"0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: <unknown filename> ::
+onxblkeypress :: line 4"  data: no]]]></ns1:isDescription>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isBugname>F7 to toggle browse-with-caret hits a JS error</ns1:isBugname>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1470284">
+    <ns1:ModifiedTime>10 months ago</ns1:ModifiedTime>
+    <ns1:isReporter>Amy Lee [:amylee] UX</ns1:isReporter>
+    <ns1:isDescription>Hi, 
+
+The default fill colour for a Highlight card with no image is currently too light on Dark theme. Can you please change this to Grey 60 ##4a4a4f. See attached for reference</ns1:isDescription>
+    <ns1:isBugname>New Tab Highlight card no image default colour is too light (Dark Theme)</ns1:isBugname>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:ReportedTime>10 months ago</ns1:ReportedTime>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1471391">
+    <ns1:isDescription>We need to create a UI template that can communicate with AS Router via actions like the existing ASR templates. It should also implement telemetry and impression collection in a similar way.
+
+Note that this may need to be broken down into more bugs to handle separate aspects of the UI.</ns1:isDescription>
+    <ns1:isBugname>Create CFR doorhanger UI template</ns1:isBugname>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:ModifiedTime>6 months ago</ns1:ModifiedTime>
+    <ns1:ReportedTime>10 months ago</ns1:ReportedTime>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isReporter>Kate Hudson :k88hudson</ns1:isReporter>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 754762">
+    <ns1:ReportedTime>7 years ago</ns1:ReportedTime>
+    <ns1:ModifiedTime>6 years ago</ns1:ModifiedTime>
+    <ns1:isProduct>Infrastructure &amp; Operations</ns1:isProduct>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isAssignee>Adam Newman [:adam]</ns1:isAssignee>
+    <ns1:isReporter>Shyam Mani [:fox2mike]</ns1:isReporter>
+    <ns1:isDescription>Yo netops, bugzilla-stage-tip.mozilla.org can't auto update because it can't see it's daddy, therefore pls halp!
+
+web2.stage.bugs.scl3.mozilla.com -&gt; bzr.mozilla.org, ports 4155 and 22</ns1:isDescription>
+    <ns1:isComponent>NetOps: DC ACL Request</ns1:isComponent>
+    <ns1:isBugname>Firewall hole for web2.stage</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 122312">
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isReporter>John Gaunt (redfive)</ns1:isReporter>
+    <ns1:isComponent>XUL</ns1:isComponent>
+    <ns1:isBugname>[Active Accessibility] No Default</ns1:isBugname>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:ModifiedTime>16 years ago</ns1:ModifiedTime>
+    <ns1:isTriageOwner>Neil Deakin</ns1:isTriageOwner>
+    <ns1:isDescription>No reported Default Action and cannont execute the default action ( to select
+them ) for HTML Select Options.</ns1:isDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1394933">
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isReporter>Aaron Benson</ns1:isReporter>
+    <ns1:isBugname>Bookmarks toolbar dropzone needs new icon</ns1:isBugname>
+    <ns1:isComponent>Theme</ns1:isComponent>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isDescription>Spec here:</ns1:isDescription>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:isTriageOwner>Dão Gottwald [::dao]</ns1:isTriageOwner>
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 75609">
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isDescription>The current build system uses a default WINVER of 0x0400.
+This gives us the lowest common denominator of Windows support.
+However it does not define some things we need to support MSAA (Microsoft 
+Active Accessibility), such as OBJID_WINDOW and WM_GETOBJECT.
+
+Is there any reason we can't use WINVER=0x0500 as the default now?
+
+I notice that in some modules, people are forcing WINVER = 0x0500 temporarily 
+before they include certain files.</ns1:isDescription>
+    <ns1:isTriageOwner></ns1:isTriageOwner>
+    <ns1:isBugname>Cannot use Windows MSAA support with WINVER=0x0400</ns1:isBugname>
+    <ns1:isProduct>SeaMonkey</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:ReportedTime>18 years ago</ns1:ReportedTime>
+    <ns1:isComponent>Build Config</ns1:isComponent>
+    <ns1:ModifiedTime>15 years ago</ns1:ModifiedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1480509">
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:isReporter>Tim Spurway [:tspurway]</ns1:isReporter>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:ModifiedTime>8 months ago</ns1:ModifiedTime>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isDescription>For brand new Profiles, the @google and @amazon Search Shortcuts should show up in the user's default Top Sites under the following conditions:
+
+- @google will be added as #1 Top Site for all countries where Google is the default search provider
+- @amazon will be added as the #2 Top Site for all countries that have Amazon as a default Top Site.  In the case where Amazon is the only Shortcut added, it will, of course, be the #1 Top Site</ns1:isDescription>
+    <ns1:isBugname>Populating Default Profiles with @google and @amazon Top Site Search Shortcut tiles</ns1:isBugname>
+    <ns1:ReportedTime>9 months ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1487118">
+    <ns1:isReporter>Adam Hillier :ahillier</ns1:isReporter>
+    <ns1:isComponent>Activity Streams: Newtab</ns1:isComponent>
+    <ns1:ModifiedTime>7 months ago</ns1:ModifiedTime>
+    <ns1:isDescription></ns1:isDescription>
+    <ns1:isTriageOwner>Tim Spurway [:tspurway]</ns1:isTriageOwner>
+    <ns1:ReportedTime>8 months ago</ns1:ReportedTime>
+    <ns1:isBugname>Cleanup CFR recommendations when the experiment/ASRouter gets disabled</ns1:isBugname>
+    <ns1:isAssignee>Adam Hillier :ahillier</ns1:isAssignee>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1363028">
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isAssignee>[:Towkir] Ahmed</ns1:isAssignee>
+    <ns1:isTriageOwner>Dão Gottwald [::dao]</ns1:isTriageOwner>
+    <ns1:isDescription>For Photon we want new set of bookmark toolbar buttons, see</ns1:isDescription>
+    <ns1:isReporter>Johann Hofmann [:johannh]</ns1:isReporter>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Firefox</ns1:isProduct>
+    <ns1:isBugname>Update bookmark toolbar icons</ns1:isBugname>
+    <ns1:isComponent>Theme</ns1:isComponent>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 1403167">
+    <ns1:ModifiedTime>2 years ago</ns1:ModifiedTime>
+    <ns1:isBugname>Crash in [@ mozilla::layout::Text</ns1:isBugname>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Jessie [:jbonisteel] plz needinfo</ns1:isTriageOwner>
+    <ns1:isAssignee>Alexis Beingessner [:Gankro]</ns1:isAssignee>
+    <ns1:isReporter>Jan Andre Ikenmeyer [:darkspirit]</ns1:isReporter>
+    <ns1:isComponent>Graphics: WebRender</ns1:isComponent>
+    <ns1:ReportedTime>2 years ago</ns1:ReportedTime>
+    <ns1:isDescription>Nightly 58 x64 20170926100259 de_DE @ Debian Testing (KDE / Radeon RX480)
+gpu-process + layers force accel + webrender + webrendest + layersfree
+
+I just updated to this build, restarted Nightly and got multiple tab crashes on about:newtab and also on web tabs, but not immediately everytime.
+Now I disabled webrendest and it seems stable.</ns1:isDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 129916">
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isTriageOwner>Hsin-Yi Tsai [:hsinyi]</ns1:isTriageOwner>
+    <ns1:isComponent>User events and focus handling</ns1:isComponent>
+    <ns1:isDescription>Netscape is adding this keybinding because of a confidential customer
+requirement; if Mozilla would like to be compatible, here's the change,
+otherwise we'll have to take it in our tree only.
+
+Our normal binding for redo, Accel+Y will remain for now.
+
+Accel+shift+Z is actually used for redo in a variety of Windows programs,
+including notepad, Visual Studio, and ordinary text fields. There is no clear
+standard for redo, except that it can be Accel+Y or Accel+shift+Z.</ns1:isDescription>
+    <ns1:ModifiedTime>a month ago</ns1:ModifiedTime>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isBugname>Add Accel+shift+z for redo on all platforms</ns1:isBugname>
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 905683">
+    <ns1:isAssignee>Kadir Topal [:atopal]</ns1:isAssignee>
+    <ns1:ReportedTime>6 years ago</ns1:ReportedTime>
+    <ns1:isProduct>support.mozilla.org</ns1:isProduct>
+    <ns1:isComponent>Knowledge Base Software</ns1:isComponent>
+    <ns1:isTriageOwner>Roland Tanglao needinfo please :rolandtanglao, :mohnkuchen, :adobo, :sinigang, :roland</ns1:isTriageOwner>
+    <ns1:isDescription>To integrate Optimizely with GA it needs to be loaded before GA, see documentation:</ns1:isDescription>
+    <ns1:isReporter>Kadir Topal [:atopal]</ns1:isReporter>
+    <ns1:ModifiedTime>6 years ago</ns1:ModifiedTime>
+    <ns1:isBugname>Move Optimizely snippet up, to load before GA</ns1:isBugname>
+  </rdf:Description>
+  <rdf:Description rdf:about="Bug 129628">
+    <ns1:ReportedTime>17 years ago</ns1:ReportedTime>
+    <ns1:isProduct>Core</ns1:isProduct>
+    <ns1:isAssignee>Aaron Leventhal</ns1:isAssignee>
+    <ns1:isTriageOwner>Sean Voisen (:svoisen)</ns1:isTriageOwner>
+    <ns1:isBugname>Crash in ns</ns1:isBugname>
+    <ns1:ModifiedTime>17 years ago</ns1:ModifiedTime>
+    <ns1:isComponent>Layout</ns1:isComponent>
+    <ns1:isReporter>Aaron Leventhal</ns1:isReporter>
+    <ns1:isDescription>Sometimes GetPrimaryFrameFor to be called during the destruction phase of the
+frame manager. This causes it to return an invalid pointer to a frame.
+
+GetPrimaryFrameFor needs to check a flag, and return early if the frame manager
+is in the middle of it's destruction phase.
+
+This is the Bugzilla equivalent of Bugscape 12117
+(</ns1:isDescription>
+  </rdf:Description>
+</rdf:RDF>
